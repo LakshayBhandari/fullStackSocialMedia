@@ -35,11 +35,9 @@ const UserSchema = new mongoose.Schema(
     },
     location: String,
     occupation: String,
-    viewedProfile: Number,
     impressions: Number,
   },
   { timestamps: true }
 );
-
 const User = mongoose.model("User", UserSchema);
 export default User;
